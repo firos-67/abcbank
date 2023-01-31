@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <div class="col-lg-5 mb-3 mt-5 ml-5">
+          <div class="card shadow">
+             <div class="card-body">
+                 <h3 ><a class="card-title" align="center" href="{% url 'bankapp:form' %}">KYC Form</a></h3>
+                {% for msg in messages %}
+                    {{msg}}
+                 {% endfor %}
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
